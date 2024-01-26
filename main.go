@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"math/rand"
 
@@ -167,8 +166,6 @@ func main() {
 	particleGroups[0] = NewParticleGroup(config, rl.Red)
 	particleGroups[1] = NewParticleGroup(config, rl.Yellow)
 	particleGroups[2] = NewParticleGroup(config, rl.Blue)
-
-	fmt.Printf("%+v", particleGroups)
 
 	rl.InitWindow(config.winWidth, config.winHeight, config.winTitle)
 	defer rl.CloseWindow()
